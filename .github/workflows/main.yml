@@ -27,3 +27,7 @@ jobs:
     - name: Build
       run: npm run build --if-present
 
+    - name: Log Changes
+      run: |
+        echo "Changes in this push:"
+        git log --pretty=format:"%h - %s" -n 20
