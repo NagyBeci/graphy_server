@@ -1,6 +1,6 @@
 # Use a more secure and updated base image, if available.
 # It's important to choose a version that doesn't have the zlib vulnerability.
-FROM node:21.5-bookworm-slim
+FROM node:21.7.2-bookworm-slim
 
 # Copy necessary files
 COPY graphserver.js .
